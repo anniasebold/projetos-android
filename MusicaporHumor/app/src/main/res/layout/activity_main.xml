@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright">
+
+    <ToggleButton
+    android:id="@+id/activity_toggleButton_feliz"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/activity_titulo"
+    android:layout_alignStart="@+id/activity_titulo"
+    android:layout_below="@+id/activity_textView"
+    android:layout_marginLeft="28dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="14dp"
+    android:checked="false"
+    android:text="ToggleButton"
+    android:textOff="Pausar"
+    android:textOn="Tocar" />
+
+    <ToggleButton
+        android:id="@+id/activity_toggleButton_triste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_toggleButton_feliz"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/activity_toggleButton_feliz"
+        android:layout_marginBottom="122dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="Pausar"
+        android:textOn="Tocar" />
+
+    <TextView
+        android:id="@+id/activity_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_titulo"
+        android:layout_alignStart="@+id/activity_titulo"
+        android:layout_below="@+id/activity_titulo"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="40dp"
+        android:text="Feliz"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/activity_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Escolha a música a partir do seu Humor"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_toggleButton_triste"
+        android:layout_alignLeft="@+id/activity_textView"
+        android:layout_alignStart="@+id/activity_textView"
+        android:layout_marginBottom="23dp"
+        android:text="Triste"
+        android:textSize="25dp" />
+
+</RelativeLayout>

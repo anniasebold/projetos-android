@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background">
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:background="@drawable/logo"
+        android:maxHeight="81dp"
+        android:maxWidth="300dp"
+        android:minHeight="81dp"
+        android:minWidth="300dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="33dp"
+        android:text="Preço Alcool"
+        android:textColor="@color/color_text"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Preço Gasolina"
+        android:textColor="@color/color_text"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/activity_text_preco_alcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:background="@color/color_text2"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/activity_text_preco_gasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignBaseline="@+id/activity_text_preco_alcool"
+        android:layout_alignBottom="@+id/activity_text_preco_alcool"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:background="@color/color_text2"
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/activity_button_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_text_preco_alcool"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:paddingHorizontal="60dp"
+        android:text="Verificar" />
+
+    <TextView
+        android:id="@+id/activity_texto_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_text_preco_alcool"
+        android:layout_alignStart="@+id/activity_text_preco_alcool"
+        android:layout_below="@+id/activity_button_resultado"
+        android:textColor="@color/color_text"
+        android:layout_marginTop="32dp"
+        android:text="Texto Resultado"
+        android:textSize="30dp"/>
+</RelativeLayout>

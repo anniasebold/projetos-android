@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="checkone"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="23dp"
+        android:text="Quais animais de Estimação você tem?" />
+
+    <CheckBox
+        android:id="@+id/activity_checkbox_cao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkone"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="32dp"
+        android:text="Cão" />
+
+    <CheckBox
+        android:id="@+id/activity_checkbox_gato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkone"
+        android:layout_alignLeft="@+id/activity_checkbox_cao"
+        android:layout_alignStart="@+id/activity_checkbox_cao"
+        android:layout_below="@+id/activity_checkbox_cao"
+        android:layout_marginTop="15dp"
+        android:text="Gato" />
+
+    <CheckBox
+        android:id="@+id/activity_checkbox_papagaio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkone"
+        android:layout_alignLeft="@+id/activity_checkbox_gato"
+        android:layout_alignStart="@+id/activity_checkbox_gato"
+        android:layout_below="@+id/activity_checkbox_gato"
+        android:layout_marginTop="12dp"
+        android:text="Papagaio" />
+
+    <CheckBox
+        android:id="@+id/activity_checkbox_cobra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkone"
+        android:layout_alignLeft="@+id/activity_checkbox_papagaio"
+        android:layout_alignStart="@+id/activity_checkbox_papagaio"
+        android:layout_below="@+id/activity_checkbox_papagaio"
+        android:layout_marginTop="13dp"
+        android:text="Cobra" />
+
+    <CheckBox
+        android:id="@+id/activity_checkbox_hamster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_checkbox_cobra"
+        android:layout_alignStart="@+id/activity_checkbox_cobra"
+        android:layout_below="@+id/activity_checkbox_cobra"
+        android:layout_marginTop="14dp"
+        android:text="Hamster" />
+
+    <Button
+        android:id="@+id/activity_botao_mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/activity_checkbox_hamster"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/activity_checkbox_hamster"
+        android:layout_below="@+id/activity_checkbox_hamster"
+        android:layout_marginTop="37dp"
+        android:text="Mostrar" />
+
+    <TextView
+        android:id="@+id/activity_mostrar_selecionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/activity_checkbox_cao"
+        android:layout_alignRight="@+id/activity_checkbox_cao"
+        android:layout_below="@+id/activity_botao_mostrar"
+        android:layout_margin="33dp"
+        android:text="" />
+</RelativeLayout>
